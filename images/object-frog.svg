@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="object-frog" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px"
+	 height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+<g>
+	<circle fill="#1F9600" cx="25" cy="25" r="25"/>
+	<path fill="#0E4100" d="M3.064,30C5.339,40.019,14.293,47.5,25,47.5S44.661,40.019,46.936,30H3.064z"/>
+	<path fill="#AB0014" d="M17.5,32.5h15c0,0,0,12.5-7.5,12.5S17.5,32.5,17.5,32.5z"/>
+	<circle fill="#0E4100" cx="21.25" cy="23.75" r="1.25"/>
+	<circle fill="#0E4100" cx="28.75" cy="23.75" r="1.25"/>
+	<circle fill="#F7FEF5" cx="12.5" cy="15" r="5"/>
+	<circle fill="#F7FEF5" cx="37.5" cy="15" r="5"/>
+	<path fill="#2F6621" d="M37.5,10c2.762,0,5,2.238,5,5H45c0-4.142-3.357-7.5-7.5-7.5S30,10.858,30,15h2.5
+		C32.5,12.238,34.738,10,37.5,10z"/>
+	<path fill="#2F6621" d="M12.5,10c2.762,0,5,2.238,5,5H20c0-4.142-3.357-7.5-7.5-7.5S5,10.858,5,15h2.5C7.5,12.238,9.738,10,12.5,10
+		z"/>
+	<circle fill="#0E4100" cx="12.5" cy="15" r="2.5"/>
+	<circle fill="#0E4100" cx="37.5" cy="15" r="2.5"/>
+</g>
+</svg>

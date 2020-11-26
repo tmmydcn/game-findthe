@@ -1,0 +1,166 @@
+<!doctype html>
+
+<!-- copyright tmmydcn -->
+
+<html lang="" theme="">
+
+<head>
+	<title id="title-browser">&nbsp;</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=0.70, user-scalable=no" />
+	<meta id="meta-description" name="description" content="" />
+	<meta id="meta-open-graph-title" property="og:title" content="" />
+	<meta id="meta-open-graph-description" property="og:description" content="" />
+	<link id="image-favicon-32x32" rel="icon" type="image/png" href="" sizes="32x32" />
+	<link id="image-favicon-64x64" rel="icon" type="image/png" href="" sizes="64x64" />
+	<link id="image-favicon-128x128" rel="icon" type="image/png" href="" sizes="128x128" />
+	<link rel="stylesheet" href="styles/main.css" />
+	<script src="scripts/controller.js"></script>
+	<script src="scripts/game.js"></script>
+	<script src="scripts/messages.js"></script>
+	<script src="scripts/objects.js"></script>
+	<script src="scripts/utils.js"></script>
+</head>
+
+<body>
+
+	<!-- POPUP-NOSCRIPT -->
+	<noscript>
+		<div id="popup-noscript" class="popup">
+			<div>
+				<p>JavaScript must be enabled to play this game!</p>
+				<p>JavaScript moet ingeschakeld zijn om dit spel te spelen!</p>
+			</div>
+		</div>
+	</noscript>
+
+	<!-- HEADER -->
+	<header id="header">
+		<div id="titlebar">
+			<h1 id="title-header">&nbsp;</h1>
+		</div>
+		<div id="toolbar">
+			<div id="toolbar-score">
+				<img id="image-object-default" src="images/object-default.svg" alt="" />
+				<img id="image-object-frog" src="images/object-frog.svg" alt="" />
+				<img id="image-object-pig" src="images/object-pig.svg" alt="" />
+				<p id="text-score">&nbsp;</p>
+			</div>
+			<div id="toolbar-options">
+				<img id="image-restart" src="images/restart.svg" alt="" onclick="showRestart()" />
+				<img id="image-ranking" src="images/ranking.svg" alt="" onclick="showRanking()" />
+				<img id="image-settings" src="images/settings.svg" alt="" onclick="showSettings()" />
+				<img id="image-help" src="images/help.svg" alt="" onclick="showHelp()" />
+			</div>
+		</div>
+	</header>
+
+	<!-- CANVAS -->
+	<canvas id="canvas"></canvas>
+
+	<!-- FOOTER -->
+	<footer id="footer">
+		<p id="text-footer-privacy-policy" onclick="showPrivacyPolicy()">&nbsp;</p>
+		<p id="text-footer-copyright">&nbsp;</p>
+	</footer>
+
+	<!-- POPUP-RESTART -->
+	<div id="popup-restart" class="popup">
+		<div>
+			<h2 id="title-restart">&nbsp;</h2>
+			<p id="text-restart">&nbsp;</p>
+			<hr class="divider-line" />
+			<span id="button-restart-yes" class="button" onclick="restart()">&nbsp;</span>
+			<span id="button-restart-no" class="button" onclick="closeRestart()">&nbsp;</span>
+			<div class="button-popup-close" onclick="closeRestart()">X</div>
+		</div>
+	</div>
+
+	<!-- POPUP-SUBMIT-SCORE -->
+	<div id="popup-submit-score" class="popup">
+		<div>
+			<h2 id="title-submit-score">&nbsp;</h2>
+
+			<p id="text-submit-score-error" class="error">&nbsp;</p>
+
+			<p id="text-submit-score-score">&nbsp;<p>
+			<p id="text-submit-score">&nbsp;</p>
+
+			<form id="form-submit-score">
+				<input type="text" id="input-text-submit-score-player-name" name="player-name" maxlength="25"></input>
+			</form>
+
+			<hr class="divider-line" />
+
+			<span id="button-submit-score-submit" class="button" onclick="submitScore()">&nbsp;</span>
+			<span id="button-submit-score-cancel" class="button" onclick="closeSubmitScore()">&nbsp;</span>
+
+			<div class="button-popup-close" onclick="closeSubmitScore()">X</div>
+		</div>
+	</div>
+
+	<!-- POPUP-RANKING -->
+	<div id="popup-ranking" class="popup">
+		<div>
+			<h2 id="title-ranking">&nbsp;</h2>
+			<p id="text-ranking-error" class="error">&nbsp;</p>
+			<p id="text-ranking">&nbsp;</p>
+			<table id="table-ranking"></table>
+			<hr class="divider-line" />
+			<span id="button-ranking-ok" class="button" onclick="closeRanking()">&nbsp;</span>
+			<div class="button-popup-close" onclick="closeRanking()">X</div>
+		</div>
+	</div>
+
+	<!-- POPUP-SETTINGS -->
+	<div id="popup-settings" class="popup">
+		<div>
+			<h2 id="title-settings-language">&nbsp;</h2>
+			<span id="button-settings-language-en" class="button" onclick="updateLanguage('en')">&nbsp;</span>
+			<span id="button-settings-language-nl" class="button" onclick="updateLanguage('nl')">&nbsp;</span>
+
+			<h2 id="title-settings-theme">&nbsp;</h2>
+			<span id="button-settings-theme-default" class="button" onclick="updateTheme('default')">&nbsp;</span>
+			<span id="button-settings-theme-frog" class="button" onclick="updateTheme('frog')">&nbsp;</span>
+			<span id="button-settings-theme-pig" class="button" onclick="updateTheme('pig')">&nbsp;</span>
+
+			<h2 id="title-settings-sound">&nbsp;</h2>
+			<span id="button-settings-sound-true" class="button" onclick="updateSound('true')">&nbsp;</span>
+			<span id="button-settings-sound-false" class="button" onclick="updateSound('false')">&nbsp;</span>
+
+			<hr class="divider-line" />
+
+			<span id="button-settings-ok" class="button" onclick="closeSettings()">&nbsp;</span>
+
+			<div class="button-popup-close" onclick="closeSettings()">X</div>
+		</div>
+	</div>
+
+	<!-- POPUP-HELP -->
+	<div id="popup-help" class="popup">
+		<div>
+			<h2 id="title-help">&nbsp;</h2>
+			<p id="text-help">&nbsp;</p>
+			<hr class="divider-line" />
+			<span id="button-help-ok" class="button" onclick="closeHelp()">&nbsp;</span>
+			<div class="button-popup-close" onclick="closeHelp()">X</div>
+		</div>
+	</div>
+
+	<!-- POPUP-PRIVACY-POLICY -->
+	<div id="popup-privacy-policy" class="popup">
+		<div>
+			<h2 id="title-privacy-policy">&nbsp;</h2>
+			<p id="text-privacy-policy">&nbsp;</p>
+			<hr class="divider-line" />
+			<span id="button-privacy-policy-ok" class="button" onclick="closePrivacyPolicy()">&nbsp;</span>
+			<div class="button-popup-close" onclick="closePrivacyPolicy()">X</div>
+		</div>
+	</div>
+
+	<!-- INIT -->
+	<script>init();</script>
+
+</body>
+
+</html>

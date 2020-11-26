@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="ranking" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px"
+	 height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<g>
+	<g>
+		<g>
+			<path fill="#FFFFFF" d="M25.834,30l3.332,20h6c-2.219-6.327-3.484-13.673-4.207-20H25.834z M64.834,50h6l3.332-20h-5.125
+				C68.318,36.327,67.053,43.673,64.834,50z M50,0C22.386,0,0,22.386,0,50s22.386,50,50,50s50-22.386,50-50S77.614,0,50,0z M75,55
+				H62.751c-1.989,4.003-4.522,7.192-7.751,8.818V75h10v10H35V75h10V63.818c-3.229-1.626-5.762-4.814-7.751-8.818H25l-5-30h10.475
+				C30.001,19.125,30,15,30,15h40c0,0-0.001,4.125-0.475,10H80L75,55z"/>
+		</g>
+	</g>
+</g>
+</svg>

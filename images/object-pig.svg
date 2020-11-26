@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="object-pig" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px"
+	 height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+<g>
+	<g>
+		<circle fill="#882D61" cx="25" cy="25" r="25"/>
+	</g>
+	<circle fill="#4D022C" cx="37.5" cy="22.5" r="2.5"/>
+	<circle fill="#4D022C" cx="12.5" cy="22.5" r="2.5"/>
+	<ellipse fill="#C07DA3" cx="25" cy="37.5" rx="10" ry="7.5"/>
+	<circle fill="#6B1345" cx="21.499" cy="37.5" r="2.5"/>
+	<circle fill="#6B1345" cx="28.501" cy="37.5" r="2.5"/>
+	<path fill="#6B1345" d="M14.279,14.278c1.647-1.647,0.224-6.364-1.766-10.933c-3.802,2.198-6.97,5.365-9.167,9.167
+		C7.915,14.502,12.631,15.925,14.279,14.278z"/>
+	<path fill="#6B1345" d="M37.487,3.345c-1.99,4.569-3.413,9.286-1.766,10.934c1.647,1.647,6.365,0.224,10.934-1.766
+		C44.457,8.71,41.29,5.543,37.487,3.345z"/>
+</g>
+</svg>
