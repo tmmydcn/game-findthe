@@ -16,7 +16,7 @@ function searchMessage(key) {
 	switch (key) {
 
 		/* EN */
-		case "en.title.object.default":					return "Object Default-";
+		case "en.title.object.default":					return "Object Default";
 		case "en.title.object.frog":					return "Object Frog";
 		case "en.title.object.pig":						return "Object Pig";
 		case "en.title.restart":						return "Restart";
