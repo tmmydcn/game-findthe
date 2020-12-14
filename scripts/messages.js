@@ -42,7 +42,7 @@ function searchMessage(key) {
 		case "en.button.settings.sound.false":			return "Off";
 		case "en.title.help":							return "Help";
 		case "en.title.privacy.policy":					return "Privacy Policy";
-		case "en.text.privacy.policy":					return "No personal information is collected except for your player name. The player name is collected to be able to add your score to the ranking. Adding your score to the ranking is not mandatory. No personal information is passed on to third parties. You always have the right to request, change or delete your data. For this, you can send an email to <a href='mailto:privacy@tmmydcn.com'> privacy@tmmydcn.com</a>.";
+		case "en.text.privacy.policy":					return "No personal information is collected except for your player name. The player name is collected to be able to add your score to the ranking. Adding your score to the ranking is not mandatory. No personal information is passed on to third parties. You always have the right to request, change or delete your data. For this, you can send an email to <a href='mailto:tmmydcn@outlook.com'>tmmydcn@outlook.com</a>.";
 		case "en.text.error.unknown":					return "Unknown error.";
 		case "en.button.ok":							return "OK";
 		case "en.button.yes":							return "YES";
@@ -101,7 +101,7 @@ function searchMessage(key) {
 		case "nl.button.settings.sound.false":			return "Uit";
 		case "nl.title.help":							return "Help";
 		case "nl.title.privacy.policy":					return "Privacybeleid";
-		case "nl.text.privacy.policy":					return "Met uitzondering van uw spelersnaam worden er geen persoonlijke gegevens verzameld. De spelersnaam wordt verzameld om uw score toe te kunnen voegen aan het klassement. Het toevoegen van uw score aan het klassement is niet verplicht. Er worden geen persoonlijke gegevens doorgegeven aan derde partijen. U hebt altijd het recht uw gegevens op te vragen, aan te passen of te verwijderen. Hiervoor kunt u een e-mail sturen naar <a href='mailto:privacy@tmmydcn.com'>privacy@tmmydcn.com</a>.";
+		case "nl.text.privacy.policy":					return "Met uitzondering van uw spelersnaam worden er geen persoonlijke gegevens verzameld. De spelersnaam wordt verzameld om uw score toe te kunnen voegen aan het klassement. Het toevoegen van uw score aan het klassement is niet verplicht. Er worden geen persoonlijke gegevens doorgegeven aan derde partijen. U hebt altijd het recht uw gegevens op te vragen, aan te passen of te verwijderen. Hiervoor kunt u een e-mail sturen naar <a href='mailto:tmmydcn@outlook.com'>tmmydcn@outlook.com</a>.";
 		case "nl.text.error.unknown":					return "Onbekende fout."
 		case "nl.button.ok":							return "OK";
 		case "nl.button.yes":							return "JA";
